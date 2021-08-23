@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_marginVertical="10dp"
+            android:id="@+id/tv_bluetooth_status"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            app:srcCompat="@drawable/b_on"
+            android:layout_marginBottom="10dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_bluetooth_off"
+            android:layout_marginHorizontal="10dp"
+            android:text="bluetooth off"
+            android:layout_marginBottom="18dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_bluetooth_on"
+            android:layout_marginHorizontal="5dp"
+            android:text="bluetooth on"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_bluetooth_discoverable"
+            android:layout_marginHorizontal="10dp"
+            android:text="Dispositivos visibles"
+            android:layout_marginBottom="5dp"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/btn_bluetooth_drives"
+            android:layout_marginHorizontal="10dp"
+            android:text="mostrar dispositivos"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:id="@+id/pairedtv"
+            android:padding="5dp"/>
+    </LinearLayout>
+
+</ScrollView>
